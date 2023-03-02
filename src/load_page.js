@@ -32,5 +32,24 @@ export default function pageLoad(cartIcon, headerBg) {
   navLinkItemArray[2].appendChild(document.createElement('a')).textContent = 'About Us';
   navLinkItemArray[2].classList.add('about-link');
   navLinkItemArray[2].firstChild.setAttribute('href', '');
+
+  /////////// HEADER TITLE \\\\\\\\\\\
   
+  let titleContainer = document.createElement('div');
+  let mainTitleText = document.createElement('h1');
+  let subTitleText = document.createElement('p');
+
+  
+
+  titleContainer.classList.add('title-container');
+  mainTitleText.classList.add('main-title-text');
+  subTitleText.classList.add('sub-title-text');
+
+
+  mainTitleText.textContent = 'One Of One Coffee';
+  subTitleText.textContent = 'Mundo Novo Beans ● 24 Flavors ● Specialty Drinks'
+
+  header.appendChild(titleContainer);
+  titleContainer.append(mainTitleText, subTitleText);
+
 };

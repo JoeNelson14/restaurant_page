@@ -66,14 +66,12 @@ select {
 }
 
 @font-face {
-  font-family: 'NeonFont';
-  src: url('./NeonToolbox.otf') format('otf');
-  font-weight: 500;
-  font-style: normal;
+  font-family: 'TitleText';
+  src: url('./Kalam-Regular.ttf');
 }
 
 body {
-  background-color: rgb(41, 41, 41);
+  background-color: rgb(0, 0, 0);
 }
 
 nav {
@@ -88,10 +86,11 @@ nav {
 
 header {
   min-height: 100vh;
-  background-image: url('/home/joe/repos/restaurant_page/src/header-bg.jpg');
+  background-image: url('./header-bg-4k.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-origin: border-box;
 }
 
 .nav-link-container {
@@ -111,11 +110,11 @@ header {
 .list-item > a {
   color: white;
   text-decoration: none;
-  font-family: 'NeonFont';
+  font-family: 'TitleText';
 }
 
 .list-item > a:hover {
-  color: blue;
+  color: rgb(255, 0, 234);
   cursor: pointer;
 }
 
@@ -123,4 +122,27 @@ header {
   width: 2rem;
   height: auto;
   margin: 0 2rem 0 0;
+}
+
+
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  color: white;
+  font-family: 'TitleText';
+  width: 800px;
+  height: 500px;
+}
+
+.main-title-text {
+  font-size: 4rem;
+}
+
+.sub-title-text {
+  font-size: 1.3rem;
 }
