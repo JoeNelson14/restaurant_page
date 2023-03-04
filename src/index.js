@@ -1,6 +1,10 @@
 import './style.css';
 import cart_icon from './shopping-cart.png';
-import { pageLoad, navLoad, menuPageLoad, orderPageLoad, aboutPageLoad } from './load_page.js';
+import pageLoad from './load_main_page.js';
+import navLoad from './load_nav';
+import menuPageLoad from './load_menu';
+import orderPageLoad from './load_order';
+import aboutPageLoad  from './load_about';
 
 const cartIcon = new Image();
 cartIcon.src = cart_icon;
