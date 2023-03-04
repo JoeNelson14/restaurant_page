@@ -95,6 +95,9 @@ nav {
 
 #content {
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .homepage-img {
@@ -213,4 +216,44 @@ nav {
 
 .novo-btn:hover {
   box-shadow: inset 13.3rem 0 var(--accent-color);
+}
+
+.card-container {
+  display: grid;
+
+}
+
+.menu-card {
+  color: white;
+  border: 1px solid white;
+  height: 300px;
+  width: 400px;
+  padding: 1rem;
+}
+
+.menu-card > hr {
+  width: 50%;
+  margin: auto auto;
+  margin-bottom: 1rem;
+}
+
+
+.flavor-drink-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.flavor-title, .menu-title, .special-title {
+  text-align: center;
+}
+
+.flavor-drink {
+  list-style: none;
+}
+
+.item-price {
+  font-size: .8rem;
+  padding-left: 1rem;
 }
